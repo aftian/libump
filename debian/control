@@ -1,7 +1,8 @@
 Source: libump
 Section: devel
 Priority: optional
-Maintainer: Luc Verhaegen <libv@skynet.be>
+Maintainer: Rahman Yusri Aftian <aftian@blankon.id>
+XSBC-Original-Maintainer: Luc Verhaegen <libv@skynet.be>
 Uploaders: Luc Verhaegen <libv@skynet.be>
 Build-Depends:
  debhelper (>= 9),
@@ -13,7 +14,7 @@ Vcs-Browser: https://github.com/libv/libump
 
 Package: libump
 Section: libs
-Architecture: any
+Architecture: armhf
 Depends:
  ${shlibs:Depends},
  ${misc:Depends},
@@ -26,7 +27,7 @@ Description: ARM Unified Memory Provider library
 Package: libump-dbg
 Section: debug
 Priority: extra
-Architecture: any
+Architecture: armhf
 Depends:
  libump (= ${binary:Version}),
  ${misc:Depends},
@@ -38,7 +39,7 @@ Description: ARM Unified Memory Provider library (debugging symbols)
 
 Package: libump-dev
 Section: libdevel
-Architecture: any
+Architecture: armhf
 Depends:
  libump (= ${binary:Version}),
  ${misc:Depends},
